@@ -1,0 +1,1 @@
+export const black = '#292d2a';
