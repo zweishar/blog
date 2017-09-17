@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import { Container } from 'react-responsive-grid'
-import Header from '../components/header'
+import Navigation from '../components/navigation'
 import MastHead from '../components/masthead'
 
 import { rhythm, scale } from '../utils/typography'
@@ -11,7 +11,7 @@ class Template extends React.Component {
     const { location, children } = this.props
     return (
       <div>
-        <Header />
+        <Navigation />
         <Container
           style={{
             maxWidth: rhythm(24),

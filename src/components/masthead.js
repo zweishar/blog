@@ -42,10 +42,10 @@ class MastHead extends React.Component {
       <Wrapper>
         <HeaderText>
           <HeaderLink href="/">
-            World Wide Web Inspector
+            Web Mechanic
           </HeaderLink>
         </HeaderText>
-        <Slug>Deep dives into programming topics for inquisitive minds.</Slug>
+        <Slug>Tune-ups for curious web developers</Slug>
       </Wrapper>
     )
   }
