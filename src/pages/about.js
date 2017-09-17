@@ -5,45 +5,22 @@ import Helmet from "react-helmet"
 
 import { rhythm } from "../utils/typography"
 
-class BlogIndex extends React.Component {
+class About extends React.Component {
   render() {
     const siteTitle = get(this, "props.data.site.siteMetadata.title")
 
     return (
       <div>
         <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
-        <h1>TESTING</h1>
+        <h1>About Me</h1>
+        <div>
+          <p>My name is Zach Weishar, and I'm a developer working for a Boston based agency called <a href="https://www.isovera.com">Isovera</a>. We work primarily with Drupal, creating web applications tailored to meet the needs of our clients.</p>
+
+          <p>I started this blog to document my journey as I continue to expand my knowledge as a developer. I hope others will find this information useful as they embark on their own journeys. If not, at least I was a learning experience for me :)</p>
+        </div>
       </div>
     )
   }
 }
 
-BlogIndex.propTypes = {
-  route: React.PropTypes.object,
-}
-
-export default BlogIndex
-
-export const pageQuery = graphql`
-  query IndexQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          frontmatter {
-            path
-            date(formatString: "DD MMMM, YYYY")
-          }
-          frontmatter {
-            title
-          }
-        }
-      }
-    }
-  }
-`
+export default About

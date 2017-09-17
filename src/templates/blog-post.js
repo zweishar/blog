@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
+import Disqus from '../components/disqus'
 
 import { rhythm, scale } from '../utils/typography'
 
@@ -32,6 +33,7 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
+        <Disqus />
       </div>
     )
   }

@@ -1,6 +1,6 @@
 ---
 title: Drupal 8 Response Headers Explained
-date: "2017-08-29"
+date: "2017-09-17"
 path: "/drupal8-response-headers/"
 ---
 
