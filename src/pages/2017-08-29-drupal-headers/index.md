@@ -29,7 +29,7 @@ Another thing to note is that your Drupal application may have different http he
 ## How to inspecting headers 
 If you're curious about the headers being set by your application, you can inspect them yourself. The two methods that I prefer are:
 
-**`curl -I https://your-domain.com`**
+`curl -I https://your-domain.com`
 
 The output of this command can be hard to read if you have many headers to sift through. If you want to filter the results you can pipe this command through `grep` like this: `curl -I https://your-domain.com | grep X-`.
 

@@ -27,13 +27,6 @@ code {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  white-space: pre;
-  white-space: pre-wrap;
-  white-space: pre-line;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -hp-pre-wrap;
   word-wrap: break-word;
   background: #e5e5e5;
   border: 1px solid #cccccc;
@@ -42,6 +35,7 @@ code {
   max-width: 100%;
   overflow: auto;
   padding: 0 0.1625rem;
+  white-space: nowrap;
 }
 
 .hljs-keyword,
