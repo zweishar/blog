@@ -13,7 +13,7 @@ class Template extends React.Component {
     if (this.props.location.pathname.match(/acme-challenge/)) {
       return (
         <div>
-          FnzcTORsh4m0ti9CqOYrLbZDQUkp23RTFn3fZDLIW0Q.pqp6GrLwC3ZJ_3RZur99eCuXTGDXe7VeXnIhCm7RAFY
+          fyDjBSObMhY8TKxtDj7RBv0Vi8VTt1fcpRmSHRVpPCk.pqp6GrLwC3ZJ_3RZur99eCuXTGDXe7VeXnIhCm7RAFY
         </div>
       )
     }
