@@ -6,8 +6,8 @@ pages:
     - npm install --global gatsby-cli
     - gatsby build
     - mkdir -p public/.well-known/acme-challenge
-    - touch public/.well-known/acme-challenge/h3WphqVlvm2UrrMkIcSUX1SzZua6UaTTXlVS1pgHXX0.html
-    - echo "h3WphqVlvm2UrrMkIcSUX1SzZua6UaTTXlVS1pgHXX0.pqp6GrLwC3ZJ_3RZur99eCuXTGDXe7VeXnIhCm7RAFY" > public/.well-known/acme-challenge/h3WphqVlvm2UrrMkIcSUX1SzZua6UaTTXlVS1pgHXX0.html
+    - touch public/.well-known/acme-challenge/JYVx__q6FaaUG2S0ZdkXT-pGK8p0oyUtxz3fSvk_PpE
+    - echo "JYVx__q6FaaUG2S0ZdkXT-pGK8p0oyUtxz3fSvk_PpE.pqp6GrLwC3ZJ_3RZur99eCuXTGDXe7VeXnIhCm7RAFY" > public/.well-known/acme-challenge/JYVx__q6FaaUG2S0ZdkXT-pGK8p0oyUtxz3fSvk_PpE
   artifacts:
     paths:
       - public
