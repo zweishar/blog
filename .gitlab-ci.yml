@@ -1,7 +1,10 @@
+image: node:6
+
 pages:
   stage: deploy
   image: ruby:2.3
   script:
+    - npm install
     - npm install --global gatsby-cli
     - gatsby build
   artifacts:
