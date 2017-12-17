@@ -2,6 +2,7 @@
 title: Cache Tags vs Cache Contexts
 date: "2017-08-29"
 path: "/cache-tags-vs-contexts/"
+id: "2"
 ---
 
 When starting to learn about Drupal 8's shiny new caching capabilities, I kept getting hung up on the difference between cache tags and cache contexts. The concepts made sense to me on a high level, but I was having trouble understanding the mechanics of how they were used in practice. The [cache api page](https://api.drupal.org/api/drupal/core!core.api.php/group/cache/8.2.x) and [Cache API documentation](https://www.drupal.org/node/1884796) on D.O is a great introduction, but I've always learned best from examples.

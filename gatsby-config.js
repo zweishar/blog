@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Web Mechanic",
     author: "Zach Weishar",
+    basePath: "https://zweishar.com",
   },
   plugins: [
     {

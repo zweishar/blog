@@ -2,6 +2,7 @@
 title: Drupal 8 Response Headers Explained
 date: "2017-09-17"
 path: "/drupal8-response-headers/"
+id: "1"
 ---
 
 As with most web applications, Drupal makes use of a variety of response headers in order to pass information from the server to the client. Many of these headers are standardized as [defined](https://tools.ietf.org/html/rfc4229) by the IETF and [listed](https://www.iana.org/assignments/message-headers/message-headers.xhtml) by the IANA. Mozzilla web docs also has [a great listing](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) of standardized http headers.

@@ -2,19 +2,20 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
-// import Disqus from '../components/disqus'
+import ReactDisqusThread from "react-disqus-thread"
 import Styles from '../css/zenburn.css'
-
 import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const fullPath = get(this.props, 'data.site.siteMetadata.basePath') + get(this.props, 'pathContext.path')
+    const postTitle = post.frontmatter.title | siteTitle
 
     return (
       <div>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+        <Helmet title={postTitle} />
         <h1>
           {post.frontmatter.title}
         </h1>
@@ -34,6 +35,13 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
+        <ReactDisqusThread
+          shortname={'zweishar'}
+          identifier={post.frontmatter.id}
+          title={`${post.frontmatter.title} | ${siteTitle}`}
+          url={fullPath}
+          onNewComment={this.handleNewComment}
+			  />
       </div>
     )
   }
@@ -47,6 +55,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        basePath
       }
     }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
@@ -55,6 +64,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        id
       }
     }
   }
