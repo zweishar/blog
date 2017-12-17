@@ -1,8 +1,5 @@
-# gatsby-starter-blog
-Gatsby starter for creating a blog
+# My Personal blog
+[View the site](https://zweishar.com)
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
-
-## Running in development
-`gatsby develop`
+## About
+Built with [gatsby.js](https://www.gatsbyjs.org/) and heavily based on their blog starter kit. Much thanks to them for creating a framework that's so fun to hack on.

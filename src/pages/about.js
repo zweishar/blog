@@ -13,13 +13,50 @@ class About extends React.Component {
       <div>
         <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
         <h1>About Me</h1>
-        <div>
-          <p>My name is Zach Weishar, and I'm a developer working for a Boston based agency called <a href="https://www.isovera.com">Isovera</a>. If you couldn't tell based on the content of this blog, we work primarily with Drupal.</p>
-
-          <p>As such, much of my learning centers on Drupal centric topics. However, I'm always trying to branch out. Currently I'm also interested in learning more about the javascript ecosystem, which I theorize expands at a faster rate than the universe itself. In fact, this blog is created with <a href="https://facebook.github.io/react/">React</a> and <a href="https://www.gatsbyjs.org/">Gatsby</a>.</p>
-
-          <p>I started this blog to document my journey as I continue to expand my knowledge as a developer. I hope others will find this information useful as they embark on their own journeys. If not, at least I was a learning experience for me :)</p>
-        </div>
+        <ul>
+          <li>
+            <p>
+              <strong>Name:</strong> Zach Weishar
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Occupation:</strong> Web Developer
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Location:</strong> Austin, Texas
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Employer:</strong> <a href="https://www.isovera.com">Isovera</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Platforms:</strong>
+              <ul>
+                <li>
+                  <a href="https://github.com/zweishar">Github</a>
+                </li>
+                <li>
+                  <a href="https://www.drupal.org/u/zweishar">Drupal.org</a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/ZachWeishar">Twitter</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/zachary-weishar">Linkedin</a>
+                </li>
+              </ul>
+            </p>
+          </li>
+        </ul>
+        <p>This blog is designed to help keep me sharp as a developer. It serves as a center for documentation as I explore new topics. It also scratches an itch to write that I developed during my studies in the field of Journalism.</p>
+        <p>I do hope that this material is helpful for others as they follow their own path. If you're one of those people, I would love to hear from you. Feel free to reach out!</p>
+        <p>The source code for this site is <a href="https://github.com/zweishar/blog">available on github</a>.</p>
       </div>
     )
   }
